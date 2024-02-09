@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      body {
+        background-color: #414141;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/18148936/pexels-photo-18148936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="no Image"
+      width="1000px"
+    />
+    <!-- <img src="./htl.jpg" alt="no Image" width="445" />
+    <picture>
+      <source media="(min-width: 650px)" srcset="./html.jpg" />
+      <img src="./htl.jpg" alt="" width="400" />
+    </picture> -->
+
+    <!-- An Image Map Generator-->
+
+    <img src="html.jpg" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        onclick="one()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="991,2774,1882,3636"
+        shape="rect"
+      />
+      <area
+        onclick="two()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="2016,2760,2797,3717"
+        shape="rect"
+      />
+    </map>
+
+    <script>
+      function one() {
+        alert('You Clicked on one');
+      }
+      function two() {
+        alert('You Clicked on two');
+      }
+    </script>
+  </body>
+</html>
